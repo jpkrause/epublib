@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':epublib:epublib-core')
+    compile 'net.sourceforge.htmlcleaner:htmlcleaner:2.2', 'commons-lang:commons-lang:2.4', 'net.sf.kxml:kxml2:2.3.0', 'xmlpull:xmlpull:1.1.3.4d_b4_min', 'commons-io:commons-io:2.0.1', 'org.slf4j:slf4j-api:1.6.1', 'org.slf4j:slf4j-simple:1.6.1', 'commons-vfs:commons-vfs:1.0'
+    testCompile 'junit:junit:3.81'
+}
